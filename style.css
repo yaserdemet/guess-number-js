@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(24, 24, 24);
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.row {
+    border: 3px solid #fff;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    /* border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px; */
+
+    
+}
+
+.row p {
+    font-size: 2rem;
+}
+.result {
+    margin-top: 3rem;
+}
+
+.second-row {
+    text-align: center;
+   
+}
+.btn {
+    width: 30%;
+    height: 40%;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+
+}
+.btn:hover {
+    cursor: pointer;
+}
+input {
+    height: 40%;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    outline: none;
+}
+input:hover {
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.hak {
+    margin-top: 2rem;
+}
+/* .result {
+    display: none;
+} */
+.result2 {
+    display:inline
+}
+.clue {
+    
+    margin-top: 2rem;
+}
+
+.qm1 {
+      transform: rotate(360deg); 
+      transition: all 1s;
+      /* color: red;      */
+}
+
+.qm2 {
+        transform: rotate(360deg);
+        transition: all 1s;
+}
+
+/* .row2 {
+transform: perspective(400px) rotateX(360deg);
+    transition: all 2s;
+} */
+
+.ghost {
+    position: absolute;
+    top: 10px;
+    font-size: 3rem;
+    /* transform: scale(0.5); */
+    /* transition: all 2s ease-in-out  ; */
+    animation: mymove 3s infinite;
+
+}
+
+@keyframes mymove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
