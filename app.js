@@ -97,6 +97,7 @@ button.addEventListener("click" , checker);
 
 
 input.addEventListener("keydown" , (e) => {
+    // eğer e.code yerine e.keyCode == 13 yazılsaydı numpad teki enter da çalışacaktır.
    if(e.code == "Enter"){
          checker();
    }
